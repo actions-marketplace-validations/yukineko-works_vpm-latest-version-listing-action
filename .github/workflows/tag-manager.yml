@@ -1,6 +1,7 @@
 name: Move a major tag to the latest release
 
 on:
+  workflow_dispatch:
   push:
     tags:
       - v**
