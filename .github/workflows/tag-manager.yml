@@ -1,5 +1,8 @@
 name: Move a major tag to the latest release
 
+permissions:
+  contents: write
+
 on:
   workflow_dispatch:
   push:
