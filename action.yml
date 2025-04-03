@@ -1,0 +1,23 @@
+name: VPM Latest Version Listing Builder
+description: Generate a JSON list of the latest versions for specified VPM packages using GitHub Actions.
+author: yukineko-works
+
+branding:
+  icon: archive
+  color: green
+
+inputs:
+  config:
+    description: path to the config.json file
+    required: true
+  output:
+    description: output file name
+    default: latest-version.json
+    required: false
+  token:
+    description: github token
+    required: true
+
+runs:
+  using: node20
+  main: dist/index.js
